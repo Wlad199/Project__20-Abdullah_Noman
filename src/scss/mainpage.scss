@@ -7,9 +7,13 @@
 	@include adaptiveValue("padding-top", 100, 40);
 	@include adaptiveValue("padding-bottom", 170, 50);
 	background-color: #efefef;
+	//@include adaptiveValue("padding-right", 900, 0, 3000, 1200, 1);
+	@include adaptiveValue("margin-left", 900, 0, 3000, 1200, 1);
+	//padding: 0px 900px 0px 0px;
 
 		&__container {
-			max-width: 915px;
+			margin: 0px 0px 0px 0px;
+			max-width: 1170px;
 			display: flex;
 			@media (max-width: 600px) {
 				flex-wrap: wrap;
@@ -30,6 +34,8 @@
 		}
 }
 .content-hello {
+
+	@include adaptiveValue("padding-left", 120, 0, 1170, 600, 1);
 
 		&__title {
 			font-family: Stackyard;
@@ -203,7 +209,6 @@
 			left: 0;
 			object-fit: cover;
 			z-index: -1;
-			//padding: 0px 7% 0px 0px;
 			@include adaptiveValue("padding-right", 900, 0, 3000, 1200, 1);
 		}
 	}
