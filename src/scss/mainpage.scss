@@ -247,7 +247,8 @@
 // contact ====================================================================================================//
 
 .contact {
-	@include adaptiveValue("padding-top", 150, 40);
+	@include adaptiveValue("margin-top", 150, 40, 1000, 320, 1);
+	//margin: 150px 0px 0px 0px;
 	@include adaptiveValue("padding-bottom", 120, 20);
 
 	&__container {
