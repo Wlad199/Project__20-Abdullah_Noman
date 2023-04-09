@@ -7,8 +7,7 @@
 	@include adaptiveValue("padding-top", 100, 40);
 	@include adaptiveValue("padding-bottom", 170, 50);
 	background-color: #efefef;
-	//@include adaptiveValue("padding-right", 900, 0, 3000, 1200, 1);
-	@include adaptiveValue("margin-left", 900, 0, 3000, 1200, 1);
+	@include adaptiveValue("margin-left", 1400, 0, 4000, 1200, 1);
 	//padding: 0px 900px 0px 0px;
 
 		&__container {
@@ -209,7 +208,8 @@
 			left: 0;
 			object-fit: cover;
 			z-index: -1;
-			@include adaptiveValue("padding-right", 900, 0, 3000, 1200, 1);
+			//@include adaptiveValue("padding-right", 900, 0, 3000, 1200, 1);
+			@include adaptiveValue("padding-right", 1400, 0, 4000, 1200, 1);
 		}
 	}
 
