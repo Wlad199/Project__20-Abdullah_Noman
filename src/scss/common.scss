@@ -13,3 +13,74 @@
 		}
 	}
 }
+
+// slider ====================================================================================================//
+
+.comment__content {
+	position: relative;
+}
+
+.slick-list {
+	overflow: hidden;
+}
+
+.slick-track {
+	display: flex;
+}
+
+.slick-arrow {
+	position: absolute;
+	top: 50%;
+	z-index: 10;
+	font-size: 0;
+	height: 50px;
+	width: 50px;
+	opacity: 0.6;
+	transition: all 0.3s ease 0s;
+	&:hover {
+		opacity: 1;
+	}
+}
+
+.slick-arrow.slick-prev {
+	left: 0;
+	@media (min-width: 767px) {
+		background: url('@img/comment/icon/angles-left.svg') 0 0 no-repeat;
+	}
+}
+.slick-arrow.slick-next {
+	right: 0;
+	@media (min-width: 767px) {
+		background: url('@img/comment/icon/angles-right.svg') 0 0 no-repeat;
+	}
+}
+
+.slick-dots {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	li {
+		list-style: none;
+		margin: 0px 10px;
+		font-size: 0;
+		height: 10px;
+		width: 10px;
+		background-color: #414141;
+		border-radius: 50%;
+		border: 1px solid #252525;
+		transition: all 0.3s ease 0s;
+		&:hover{
+			background-color: #383838;
+			border: 1px solid #020202;
+		}
+		&.slick-active {
+			background-color: #fff;
+			border: 1px solid #fff;
+			transform: scale(1.1);
+			&:hover{
+				border: 1px solid #b6b6b6;
+			}
+		}
+	}
+}
