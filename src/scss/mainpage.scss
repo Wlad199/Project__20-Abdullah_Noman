@@ -172,10 +172,10 @@
 			max-width: 100%;
 		}
 		&_f {
-			padding: 0px 0px 30px 0px;
-			@include adaptiveValue("padding-bottom", 30, 10, 1170, 767, 2);
+			//margin: 0px 0px 30px 0px;
+			@include adaptiveValue("margin-bottom", 30, 10, 1170, 767, 2);
 			@media (max-width: 767px) {
-			@include adaptiveValue("padding-bottom", 30, 5, 767, 320, 1);
+			@include adaptiveValue("margin-bottom", 30, 5, 767, 320, 1);
 			}
 		}
 		&_d {
