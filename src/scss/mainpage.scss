@@ -166,6 +166,8 @@
 	}
 
 	&__image {
+		display: block;
+		cursor: zoom-in;
 		img {
 			max-width: 100%;
 		}
